@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+
 # Specs in this file have access to a helper object that includes
 # the StaticPagesHelper. For example:
 #
@@ -12,4 +13,8 @@ require 'spec_helper'
 # end
 describe StaticPagesHelper do
   pending "add some examples to (or delete) #{__FILE__}"
+
+end
+RSpec.configure do |config|
+   config.include Capybara::DSL
 end
